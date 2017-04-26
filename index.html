@@ -1,0 +1,103 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reg.css">
+    <link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css"/>
+</head>
+
+<body>
+
+<div class="general">
+
+    <div class="subject">Киев-Украина<a href="#"> 050-555-55-55</a>, <a href="#">067-555-55-55</a>
+    </div>
+
+    <div id="enterButton"><a href="#">Войти</a></div>
+
+    <div class="description" id="description1">
+
+        <ul class="main_button">
+            <li class="buttonMenu"><a href="#">О нас</a></li>
+            <li class="buttonMenu"><a href="#">Дизайн интерьера</a></li>
+            <li class="buttonMenu"><a href="#">Стили Интерьера</a></li>
+            <li class="buttonMenu"><a href="#">Услуги и цены</a></li>
+            <li class="buttonMenu"><a href="#">Вопросы</a></li>
+        </ul>
+
+        <div class="image_container">
+            <img class="soc" src="images/behance_2.png">
+            <img class="soc" src="images/vk.png">
+            <img class="soc" src="images/mail.png">
+            <img class="soc" src="images/instagram.png">
+            <img class="soc" src="images/livejournal.png">
+        </div>
+    </div>
+
+    <div id="loginWindow">
+        <div id="container">
+            <form>
+                <label for="name">Логин:</label>
+                <input type="name">
+                <label for="username">Пароль:</label>
+                <p><a href="#">Забыли пароль?</a></p>
+                <input type="password">
+                <div id="lower">
+                    <input type="checkbox"><label class="check" for="checkbox">Запомнить меня</label>
+                    <input type="submit" value="Войти">
+                    <input type="submit" value="Отмена">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--<div class="footer">-->
+    <!--<div class="footer1">&copy; 2016 Courses Front-end</div>-->
+    <!--</div>-->
+
+    <div class="list">
+
+        <div class="text">
+        <p>Почему именно мы ?</p>
+         </div>
+
+    <div class="ability">
+        <div class="card"><img src="images/1.svg"><div class="slog">Мы креативные!</div></div>
+        <div class="card"><img src="images/teamwork.svg"><div class="slog">Мы слаженные!</div></div>
+        <div class="card"><img src="images/hourglass.svg"><div class="slog">Мы пунктуальные!</div></div>
+        <div class="card"><img src="images/heart.svg"><div class="slog">Мы любим свое дело!</div></div>
+    </div>
+    </div >
+
+    <div class="list2">
+        <div class="generalImage"><img src="images/generalImage.jpg"></div>
+        <div class="blog">Мы создаем пространство ...</div>
+        <div class="blog2">Постоянное посещение архитекторами международных выставок, освещающих новинки мирового дизайна,
+            позволяет отследить последние тенденции и актуальные приемы при проектировании на сегодняшний день.
+            Команда с радостью работает со всеми существующими стилями, имея уверенность, что каждый из них с грамотным подходом
+            может быть уместен в любом пространстве.</div>
+
+            <a class="buttons" href='#' >Смотреть проекты</a>
+    </div>
+
+    <div class="list3">
+        <video autoplay loop muted class="bgvideo" id="bgvideo">
+            <source src="video/Water%20-%203967.mp4" type="video/mp4">
+            </video>
+
+    </div>
+
+
+<script>
+    document.getElementById("enterButton").addEventListener("click", function() {
+        document.getElementById('loginWindow').style.display = 'block';
+    }, false);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+.general{
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+a{color: white; /* ÷вет ссылок */
+}
+a:visited {
+    color: white; /* ÷вет посещенных ссылок */
+}
+a:active {
+    color: white; /* ÷вет активных ссылок */
+
+}
+.subject{
+    display: inline;
+    width: 230px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    float: left;
+    padding-left: 1em;
+}
+
+#enterButton{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline;
+    float: right;
+    width:5em;
+
+}
+
+.soc{
+    width: 25px;
+    height: 25px;
+
+}
+
+.description{
+    position: fixed;
+    top: 1.5%;
+    float: left;
+    background: #fffaf0;
+    width: 100%;
+    height: 4em;
+
+}
+.main_button{
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_button li {
+    /*border: solid red;*/
+    width: 150px;
+    display: inline-block;
+    height: 4em;
+    font-size: 16px;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+.main_button li a{
+    display: block;
+    line-height: 4em;
+    /*border: solid blue;*/
+    color: black;
+    height: 4em;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    transition: all 400ms ease-in;
+}
+
+.main_button li a:hover {
+    background: rgba(135, 99, 83, 0.4);
+}
+
+.image_container{
+    float: right;
+    width: 150px;
+    height: 26px;
+    padding: 1em;
+    display: inline;
+
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    background: rgba(255,255,255,0.4);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*.footer1{*/
+/*margin-left: 1%;*/
+
+/*}*/
+
+#loginWindow{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.list{
+    display: inline-block;
+    height: 82%;
+    background: #cfbdb1;
+    width: 100%;
+    margin-top: 53.8%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+}
+
+.text{
+    margin: 6% auto 0;
+    width: 15em;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 1.7em;
+}
+
+.card{
+    height: 6em;
+    width: 6em;
+    display: inline-block;
+    margin: 1em 4em;
+}
+
+.slog{
+margin-top: 1em;
+}
+
+.list2{
+    display: inline-block;
+    height: 75%;
+    background: #ae9c90;
+    width: 100%;
+}
+
+.generalImage{
+    float: right;
+    margin-top: 80px;
+    margin-right: 80px;
+}
+
+.blog{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    width: 50%;
+    margin-top: 1.8em;
+    margin-left: 1em;
+}
+
+.blog2 {
+    width: 40%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 40px;
+}
+
+.buttonList2 {
+    width: 14%;
+    height: 10%;
+    background: #382825;
+    margin-left: 40px;
+}
+.buttonList2 li{
+    text-align: center;
+    color: #c7d0d2;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+a.buttons {
+    position: absolute;
+    margin-left: 32pt;
+    width: 160px;
+    height: 30px;
+    text-decoration: none;
+    padding-top: 9px;
+    color: black ;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+a.buttons:not(.active) {
+    box-shadow: inset 0 1px 1px rgba(78, 61, 56, 0.8), inset 0 -1px 0px rgba(233, 164, 151, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(132, 115, 98, 0.3), 0 0 0 1px #1e0b07;
+    background-image: linear-gradient(#4e3d38, #b7a599);
+    text-shadow: 0 0 21px rgba(174, 156, 144, 0.5), 0 -1px 0 #847362;
+}
+
+a.buttons:not(.active):hover,
+a.buttons:not(.active):focus {
+    transition: color 200ms linear, text-shadow 500ms linear;
+    color: #fff;
+    text-shadow: 0 0 21px rgba(255, 235, 211, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #4e3d38;
+}
+a.buttons:not(:hover) {
+    transition: 0.6s;
+}
+
+
+.list3 {
+    display: inline-block;
+    height: 100%;
+    background: #cf2439;
+    width: 100%;
+    background: url('');
+    background-size: cover;
+}
+
+.bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+}
+
+
+
+
+
