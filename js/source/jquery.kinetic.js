@@ -1,11 +1,4 @@
-/*!
-    jQuery.kinetic v1.8.2
-    Dave Taylor http://the-taylors.org/jquery.kinetic
 
-    The MIT License (MIT)
-    Copyright (c) <2011> <Dave Taylor http://the-taylors.org>
-*/
-/*global define,require */
 (function($){
 	'use strict';
 
@@ -33,10 +26,7 @@
         },
         SETTINGS_KEY = 'kinetic-settings',
         ACTIVE_CLASS = 'kinetic-active';
-    /**
-     * Provides requestAnimationFrame in a cross browser way.
-     * http://paulirish.com/2011/requestanimationframe-for-smart-animating/
-     */
+
     if ( !window.requestAnimationFrame ) {
 
         window.requestAnimationFrame = ( function() {
@@ -113,7 +103,7 @@
         }
     };
 
-    /** do the actual kinetic movement */
+
     var move = function($scroller, settings) {
         var scroller = $scroller[0];
         // set scrollLeft
@@ -231,7 +221,7 @@
             settings.velocity = 0;
             settings.velocityY = 0;
 
-            // make sure we reset everything when mouse up
+
             var resetMouse = function() {
                 xpos = false;
                 ypos = false;
@@ -293,7 +283,7 @@
                 }
             };
 
-            // Events
+
             settings.events = {
                 touchStart: function(e){
                     var touch;

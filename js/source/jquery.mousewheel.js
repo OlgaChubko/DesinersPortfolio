@@ -1,10 +1,3 @@
-/*! Copyright (c) 2013 Brandon Aaron (http://brandon.aaron.sh)
- * Licensed under the MIT License (LICENSE.txt).
- *
- * Version: 3.1.4
- *
- * Requires: 1.2.2+
- */
 
 (function (factory) {
     if ( typeof define === 'function' && define.amd ) {
@@ -97,23 +90,23 @@
             delta  = deltaX * -1;
         }
 
-        // Webkit
+
         if ( orgEvent.wheelDeltaY !== undefined ) { deltaY = orgEvent.wheelDeltaY; }
         if ( orgEvent.wheelDeltaX !== undefined ) { deltaX = orgEvent.wheelDeltaX * -1; }
 
-        // Look for lowest delta to normalize the delta values
+
         absDelta = Math.abs(delta);
         if ( !lowestDelta || absDelta < lowestDelta ) { lowestDelta = absDelta; }
         absDeltaXY = Math.max(Math.abs(deltaY), Math.abs(deltaX));
         if ( !lowestDeltaXY || absDeltaXY < lowestDeltaXY ) { lowestDeltaXY = absDeltaXY; }
 
-        // Get a whole value for the deltas
+
         fn     = delta > 0 ? 'floor' : 'ceil';
         delta  = Math[fn](delta  / lowestDelta);
         deltaX = Math[fn](deltaX / lowestDeltaXY);
         deltaY = Math[fn](deltaY / lowestDeltaXY);
 
-        // Add event and delta to the front of the arguments
+
         args.unshift(event, delta, deltaX, deltaY);
 
         return ($.event.dispatch || $.event.handle).apply(this, args);
